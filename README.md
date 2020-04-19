@@ -4,7 +4,7 @@
 <p align="center">
   <a href="https://badge.fury.io/js/zoomlens"><img src="https://badgen.net/npm/v/zoomlens" alt="npm version" height="18"></a>
   <a href="https://badge.fury.io/js/zoomlens"><img src="https://badgen.net/github/release/luowatson/zoomlens.js" alt="github version" height="18"></a>
-  <a href="https://www.npmjs.com/package/zoomlens"><img src="https://badgen.net/packagephobia/install/zoomlens" alt="Install size"></a>	   <a href="https://www.npmjs.com/package/zoomlens"><img src="https://badgen.net/packagephobia/publish/zoomlens" alt="Install size"></a>
+  <a href="https://www.npmjs.com/package/zoomlens"><img src="https://badgen.net/packagephobia/install/zoomlens" alt="Install size"></a>	 
   <a href="https://www.npmjs.com/package/zoomlens"><img src="https://img.shields.io/badge/gzip size: Css-none-critical" alt="Gzip size"></a>
   <a href="https://www.npmjs.com/package/zoomlens"><img src="https://badgen.net/github/tag/luowatson/zoomlens.js" alt="latest tag
 latest tag"></a>
