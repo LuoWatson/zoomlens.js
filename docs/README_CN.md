@@ -14,33 +14,35 @@ latest tag"></a>
   <a href="https://www.npmjs.com/package/zoomlens"><img src="https://badgen.net/github/license/luowatson/zoomlens.js" alt="License"></a>
 </p>
 
-> If you like this content, you can ping me or follow me on [Github](https://github.com/LuoWatson). :+1:
+> 如果你喜欢这个内容，你可以联系我或者在[Github](https://github.com/LuoWatson)上关注我 :+1:
 
 [![NPM stats](https://nodei.co/npm/zoomlens.svg?downloadRank=true&downloads=true)](https://www.npmjs.org/package/zoomlens) 
 
 <p align="right">
-	Language:  &nbsp;English | <a href="https://github.com/LuoWatson/zoomlens.js/blob/master/docs/README_CN.md">中文</a>
+	Language:  &nbsp;<a href="https://github.com/LuoWatson/zoomlens.js/blob/master/README.md">English | </a>中文
 </p>
 
-## Table of Contents
+## 目录
 
-- [Introduction](#introduction)
-	- [Blueprint](#blueprint)
-- [Install](#install)
-	- [Download](#download)
-	- [CDN Link](#cdn-link)
-- [Usage](#usage)
-- [Examples](#examples)
-- [Options](#options)
-- [Browser Support](#Browser-support)
-- [Contributing](#contributing)
-- [History](#history)
-- [License](#license)
+- [简介](#简介)
+	- [设计图](#设计图)
+- [安装](#安装)
+	- [下载](#下载)
+	- [CDN 链接](#cdn-链接)
+- [用法](#用法)
+- [实例](#实例)
+- [选项](#选项)
+- [浏览器兼容](#浏览器兼容)
+- [维护者](#维护者)
+- [如何贡献](#如何贡献)
+- [历史版本](#历史版本)
+- [使用许可](#使用许可)
 
-## Introduction
-This is a small and powerful commodity map magnifying glass tool, it has no dependencies; There is no special requirement for image size, no need to manually write HTML tags or import additional Css styles. The picture loading is done asynchronously, so you don't have to worry about performance, and the only thing you have to do is make sure it's a picture.
+## 简介
+这是一款小巧且功能强大的商品图放大镜工具，它没有任何依赖关系；对图片尺寸不做特别要求，也不用手动编写HTML标记或额外导入Css样式。在图片加载这方面用的是异步技术，所以在性能这块您不用担心，而您唯一要做的就是确定给它的是一张图片。
 
-### Blueprint
+
+### 设计图
 <p align="center">
   <a href="https://www.npmjs.com/package/zoomlens"><img src="https://unpkg.com/zoomlens@1.0.1/source/imgs/design_layout.png" alt="Logo"></a>
 </p>
@@ -48,21 +50,21 @@ This is a small and powerful commodity map magnifying glass tool, it has no depe
 * [Official website](https://luowatson.github.io/zoomlens.js/)
 * [Documentation](https://luowatson.github.io/zoomlens.js/)
 
-## Install
-### Download
-Install via [npm](https://www.npmjs.com/), or [download as a zip](https://github.com/LuoWatson/zoomlens.js/archive/master.zip):
+## 安装
+### 下载
+通过[npm](https://www.npmjs.com/)安装，或下载为[zip](https://github.com/LuoWatson/zoomlens.js/archive/master.zip):
 
 ```
 npm install zoomlens --save
 ```
-### CDN Link
+### CDN 链接
 ``` html
 <script src="https://unpkg.com/zoomlens@1.0.1/dist/zoomlens-1.0.1.js"></script>
 <!-- or -->
 <script src="https://unpkg.com/zoomlens@1.0.1/dist/zoomlens-1.0.1.min.js"></script>
 ```
-## Usage
-Then import it into the file where you'll use it.
+## 用法
+你需要将其导入到您将使用它的文件中。
 ```html
 <script src="./zoomlens/dist/zoomlens-1.0.1.js"></script>
 ```
@@ -76,7 +78,7 @@ var zoomlens = new ZoomLens({
 ```
 
 ### normal
-Zoomlens mode is "normal" by default, so you don't have to specify the "zoomType" type.
+zoomlens模式默认为"ormal"，因此不必指定"zoomType"类型。
 ```Js
 var zoomlens = new ZoomLens({
   el: "#wrap",
@@ -85,7 +87,7 @@ var zoomlens = new ZoomLens({
 })
 ```
 ### inside
-In "inside" mode, the large image is embedded in the "mmoc".
+在"inside"模式下,大图会内嵌在"mmoc"中。
 ```Js
 var zoomlens = new ZoomLens({
   el: "#wrap",
@@ -95,7 +97,7 @@ var zoomlens = new ZoomLens({
 ```
 
 ### drag
-In "drag" mode, you need to drag the mouse to see the details of the picture.
+在"drag"模式下，你需要拖动鼠标来查看图片细节。
 ```Js
 var zoomlens = new ZoomLens({
   el: "#wrap",
@@ -104,15 +106,14 @@ var zoomlens = new ZoomLens({
 })
 ```
 
-## Examples
+## 实例
 <p align="left">
  <img src="https://unpkg.com/zoomlens@1.0.1/source/imgs/demo.gif" alt="Demo">
 </p>
 
-## Options
-The options enable the customization of the zoom. They are defined as an object with the following properties:
+## 选项
 
-| Property       | Type                               | Default            | Example                                                             |
+| 属性       | 类型                               | 默认值            | 例子                                                             |
 | -------------- | ---------------------------------- | ------------------ | ------------------------------------------------------------------- |
 | `el`           | `String`  \| `HTMLTemplateElement` | `null`             | `"#wrap"` \| `element`                                              |
 | `paths`        | `Object`  \| `Array`               | `null`             | `['xxx.jpg',...]` \| `{max: [],min: []}`                            |
@@ -132,42 +133,42 @@ The options enable the customization of the zoom. They are defined as an object 
 | `adsorbSpeed`  | `number`                           | `0.2`              | `0 ~ 1`                                                             |
 
 
-* `el:` The target element to be manipulated can be either a string or an HTML element object.
-* `paths:` The image path to be manipulated can be an array or a Javscript object.
-* `styles:` HTML element style sheet, which can only be a javascript object, see the action documentation for details.
-* `zoomType:` Currently, there are only three types of presentation on the page: "noraml", "inside" and "drag".
-* `correlate:` The associated state of "mask" and "zoom" is "true" by default, and the size of "zoom" refers to "mask".
-* `zoomScale:` The zoom ratio of the large picture, referring to the size of "mask", is 0.38 by default and can only be set to "1" at most.
-* `zoomResize:` If the size of "zoom" is adjustable, when the value is "true", the size of the "zoom" element will no longer refer to the "mask", but will use the value given by the user.
-* `zoomSeat:` The "zoom" position, by default, will be to the right of the "mmoc", and if set to "false" it will refer to the nearest positioning element.
-* `picsSeat:` The "pics" position, by default, will be to the bottom of the "mmoc", and if set to "false" it will refer to the nearest positioning element.
-* `dotGap:` The spacing of the dots in the "mask" is "1px" by default, but this is not very accurate, and if you set a value that pushes the element out of the visible area,"dotGap" will compress as necessary.
-* `dotSize:` The size of the dot in the "mask", what it needs is an array, and the values in the array are the ratio of the dot's length to its width.
-* `dotColor:` The color of the dot in the "mask", the default color is "#36c", you can set it.
-* `imgGap:` The spacing in pics, which defaults to "10px", cannot be greater than the width and height of the mmoc, which is allowed if you must.
-* `imgBorder:` Pics picture border, when you move the mouse over the picture you will find that the selected picture will generate a border.
-* `picsSpeed:` When the mouse is released after dragging the picture, the animation delay is 0.2 by default and can only be set to "1" at most.
-* `adsorbSpeed:` When the mouse is released after dragging the picture, the animation that is executed when the element is out of the visual area, the animation delay is 0.2 by default, and can only be set to "1" at most.
+* `el:` 将要操作的目标元素,你可以给一个字符串,也可以是一个HTML元素对象.
+* `paths:` 将要操作的图片路径,可以是一个数组，也可以是一个Javscript对象.
+* `styles:` HTML的元素样式表,它只能是一个javascript对象,有关详细请查看操作文档.
+* `zoomType:` 在页面中的展现方式, 目前只有"noraml"、"inside"、"drag"这三种类型.
+* `correlate:` "mask"与"zoom "的关联状态, 默认为"true", "zoom"的尺寸参照于"mask".
+* `zoomScale:` 大图的缩放比例，参照于"mask"的尺寸, 默认值是 0.38, 最大只能设置为 "1".
+* `zoomResize:` "zoom"的尺寸是否可调,当值为"true"时, "zoom"元素的尺寸不再参照于"mask",而使用用户给定的值.
+* `zoomSeat:` "zoom" 的显示位置，默认情况下它会在"mmoc"的右边,如果设置为"false"它将会参照于最近的一个定位元素.
+* `picsSeat:` "pics" 的显示位置，默认情况下它会在"mmoc"的底部,如果设置为"false"它将会参照于最近的一个定位元素.
+* `dotGap:` "mask" 中绘制点的间距, 默认情况下为 "1px", 但这并不非常精准，如果你设置的值令元素超出可视区域,"dotGap"会进行必要的压缩.
+* `dotSize:` "mask" 中绘制点的大小, 它需要的是一个数组,数组中的值分别是点的长宽比.
+* `dotColor:` "mask" 中绘制点的颜色, 默认颜色为"#36c",你可以自行设置.
+* `imgGap:` "pics" 中的图片间距, 默认值为"10px",它不能大于"mmoc"的宽高,如果你非要这么做其实也是被允许的.
+* `imgBorder:` "pics" 中的图片边框, 当你把鼠标移动到图片上时你会发现被你选中的图片会产生一个边框.
+* `picsSpeed:` 拖动"pics" 中的图片后松开鼠标时执行的动画时延, 默认值为0.2,最大只能设为"1".
+* `adsorbSpeed:` 拖动"pics" 中的图片元素超出可视区域时执行吸附操作的动画时延,默认值为0.2,最大只能设为"1".
 
 
-## Browser Support
+## 浏览器兼容
 
 ![IE](https://unpkg.com/zoomlens@1.0.1/source/imgs/icon/IE.png) | ![Edge](https://unpkg.com/zoomlens@1.0.1/source/imgs/icon/Edge.png) | ![Chrome](https://unpkg.com/zoomlens@1.0.1/source/imgs/icon/Chrome.png) | ![Firefox](https://unpkg.com/zoomlens@1.0.1/source/imgs/icon/Firefox.png) | ![Opera](https://unpkg.com/zoomlens@1.0.1/source/imgs/icon/Opera.png) | ![Safari](https://unpkg.com/zoomlens@1.0.1/source/imgs/icon/Safari.png)
 --- | --- | --- | --- | --- | --- |
 IE 7+ ✔ |  Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ |
 
-## Maintainers
+## 维护者
 [@LuoWatson](https://github.com/LuoWatson).
 
-## Contributing
-zoomlens.js is a free and open source library, and we appreciate any help you're willing to give - whether it's fixing bugs, improving documentation, or suggesting new features. Check out the contributing guide for more!
+## 如何贡献
+zoomlens.js 是一个免费的开源库，我们非常感谢你提供的任何帮助——无论是修复bug，改进文档，还是建议新特性。查看贡献指南以获得更多信息!
 
-Thank you to all the people who already contributed to zoomlens.js!
+感谢所有已经为zoomlens.js 做出贡献的人!
 
-## History
+## 历史版本
 
-For detailed changelog, check [Releases](https://github.com/LuoWatson/zoomlens.js/releases).
+有关详细请查看[版本](https://github.com/LuoWatson/zoomlens.js/releases).
 
-## License
+## 使用许可
 
 [MIT License](https://github.com/LuoWatson/zoomlens.js/blob/master/LICENSE) Copyright(c)2020-present, Luo Watson.
