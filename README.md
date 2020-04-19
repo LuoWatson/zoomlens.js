@@ -111,7 +111,6 @@ var zoomlens = new ZoomLens({
 </p>
 
 ## Options
-The options enable the customization of the zoom. They are defined as an object with the following properties:
 
 | Property       | Type                               | Default            | Example                                                             |
 | -------------- | ---------------------------------- | ------------------ | ------------------------------------------------------------------- |
