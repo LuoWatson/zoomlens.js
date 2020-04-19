@@ -9,6 +9,7 @@
   <a href="https://www.npmjs.com/package/zoomlens"><img src="https://badgen.net/github/tag/luowatson/zoomlens.js" alt="latest tag
 latest tag"></a>
   <a href="https://www.npmjs.com/package/zoomlens"><img src="https://badgen.net/npm/dm/zoomlens" alt="Downloads"></a>
+  <br/>
   <a href="https://www.npmjs.com/package/zoomlens"><img src="https://badgen.net/bundlephobia/min/zoomlens" alt="minified size"></a>
   <a href="https://www.npmjs.com/package/zoomlens"><img src="https://img.shields.io/badge/author-Luo Watson-yellowgreen" alt="Author"></a>
   <a href="https://www.npmjs.com/package/zoomlens"><img src="https://badgen.net/github/license/luowatson/zoomlens.js" alt="License"></a>
