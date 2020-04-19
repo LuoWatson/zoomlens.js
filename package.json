@@ -1,0 +1,27 @@
+{
+  "name": "zoomlens",
+  "version": "1.0.1",
+  "description": "A small and powerful commodity map magnifying glass tool, without any dependencies, compatible with older browsers.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LuoWatson/zoomlens.js.git"
+  },
+  "keywords": [
+    "zoomlens.js",
+    "javascript"
+  ],
+  "author": "Luo Watson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LuoWatson/zoomlens.js/issues"
+  },
+  "homepage": "https://github.com/LuoWatson/zoomlens.js#readme"
+}
